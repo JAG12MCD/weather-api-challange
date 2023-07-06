@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <script src="./scripts/apis.js"></script>
+    <script src="./scripts/index.js"></script>
+
+    <title>Weather App</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Weather Dashboard</h1>
+    </header>
+
+    <div class="main">
+        <div class="sidebar">
+            <div class="search-area">
+                <h1>Search for a City: </h1>
+                <input type="text" class="search-input" id="search-input" placeholder="Enter a city to get weather">
+                <div style="display: none;" class="suggestions" id="suggestions">
+                </div>
+            </div>
+            <div id="search-history" class="search-history">
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="weather-container">
+                <div class="city-weather">
+                    <h2><span id="city-name"></span> <span id="date"></span> <img id="icon" src=""></h2>
+                    <p><strong>Temp:</strong> <span id="temperature"></span></p>
+                    <p><strong>Wind:</strong> <span id="wind"></span></p>
+                    <p><strong>Humidity:</strong> <span id="humidity"></span></p>
+                </div>
+            </div>
+
+            <div class="forecast">
+                <h2 class="forecast-title">5-Day Forecast</h2>
+                <div id="forecast-cards" class="forecast-cards">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
